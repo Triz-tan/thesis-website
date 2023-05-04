@@ -21,13 +21,17 @@
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
   <h2 class="text-center mt-3 mb-3">Open Positions</h2>
-  <div>
+  <div style="margin-bottom:50px;">
     {% for job in jobs %}
+<<<<<<< HEAD
       <div>
-        <h4 style="color: gray; margin-bottom:5px;"> {{job['title']}} </h4>
-        <div style="margin-bottom:10px;"><b>Location: </b>{{job['location']}}
-        </div>
+        <h4 style="color: gray;"> {{job['title']}} </h4>
+        <div><b>Location: </b>{{job['location']}}</div>
+        <div><b>Salary: </b> {{job['salary']}} </div>
       </div>
+=======
+      {% include 'jobitem.html' %}
+>>>>>>> a5cd9abbead0269514320a51a74cc50709009a1f
     {% endfor %}
   </div>
   <div class="text-center mt-3 mb-3">
